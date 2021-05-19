@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+.red {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  display: inline-block;
+  position: relative;
+  left: 300px;
+}
+
+.blue {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  display: inline-block;
+  position: relative;
+  right: 150px;
+}
+
+.yellow {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  display: inline-block;
+  position: relative;
+  right: 150px;
+}

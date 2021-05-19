@@ -1,0 +1,8 @@
+body {
+  background-color: lightgreen;
+  color: green;
+}
+
+h1 .title {
+  color: red;
+}
