@@ -1,0 +1,29 @@
+body {
+  font-family: arial;
+  text-align: center;
+  background: lightblue;
+}
+
+h1, p {
+  color: red;
+}
+
+img {
+  background-color: red;
+}
+
+.bacon {
+  background-color: green;
+}
+
+.broccoli {
+  background-color: red;
+}
+
+.bacon:hover {
+  background-color: red;
+}
+
+.broccoli:hover {
+  background-color: green;
+}
