@@ -11,11 +11,13 @@ var buttons = document.querySelectorAll(".drum");
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function() {
     makeSound(this.innerHTML);
+    pressKey(this.innerHTML);
   });
 }
 
 document.addEventListener("keydown", function (keyPressEvent) {
   makeSound(keyPressEvent.key);
+  pressKey(keyPressEvent.key);
 });
 
 function makeSound(key) {
@@ -42,4 +44,14 @@ function makeSound(key) {
       snareAudio.play();
       break;
   }
+}
+
+function pressKey(keyPressed)
+{
+  var activeButton = document.querySelector("." + keyPressed);
+  activeButton.classList.add("pressed");
+
+  setTimeout(function() {
+    activeButton.classList.remove("pressed");
+  }, 100);
 }
