@@ -43,6 +43,13 @@ secondDiceObject.setAttribute("src", diceFilePaths[secondDiceRoll]);
 // Otherwise, if the second dice is the winner, set the text to "Second Player Wins! 🚩"
 
 if(firstDiceRoll > secondDiceRoll)
+{
   document.querySelector("h1").textContent = "🚩 First Player Wins!";
+  console.log("🚩 First Player Wins!");
+}
+
 else if (secondDiceRoll > firstDiceRoll)
-  document.querySelector("h1").textContent = "Second Player Wins! 🚩"
+{
+  document.querySelector("h1").textContent = "Second Player Wins! 🚩";
+  console.log("Second Player Wins! 🚩");
+}
