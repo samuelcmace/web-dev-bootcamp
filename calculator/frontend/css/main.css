@@ -1,0 +1,9 @@
+body {
+  font-family: arial;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.content {
+  margin-top: 5rem;
+}
